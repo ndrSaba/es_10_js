@@ -1,9 +1,10 @@
-function sumUntil() {
+function sumUntil(maxValue) {
   arr = [1, 2, 3, 4, 5];
-  sum = 0;
-  while (arr.length > 0) {
-      sum += arr.pop();
+  let sum = 0;
+  for(let i = 1; i <= maxValue; i++) {
+    sum += i;
   }
   return sum;
 }
+
 console.log(sumUntil(5));
